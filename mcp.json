@@ -1,29 +1,61 @@
 {
   "mcpServers": {
+    "fetch": {
+      "autoApprove": [],
+      "disabled": false,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    },
     "context7": {
+      "disabled": false,
       "timeout": 60,
       "type": "streamableHttp",
       "url": "https://mcp.context7.com/mcp",
-      "disabled": true
+      "autoApprove": [
+        "resolve-library-id",
+        "get-library-docs"
+      ]
     },
     "chrome-devtools": {
-      "disabled": true,
+      "disabled": false,
       "timeout": 60,
       "type": "stdio",
       "command": "npx",
       "args": [
         "-y",
         "chrome-devtools-mcp@latest"
-      ]
-    },
-    "fetch": {
-      "autoApprove": [],
-      "disabled": true,
-      "timeout": 60,
-      "type": "stdio",
-      "command": "uvx",
-      "args": [
-        "mcp-server-fetch"
+      ],
+      "autoApprove": [
+        "click",
+        "close_page",
+        "drag",
+        "emulate_cpu",
+        "emulate_network",
+        "evaluate_script",
+        "fill",
+        "fill_form",
+        "get_network_request",
+        "handle_dialog",
+        "hover",
+        "list_console_messages",
+        "list_network_requests",
+        "list_pages",
+        "navigate_page",
+        "navigate_page_history",
+        "new_page",
+        "performance_analyze_insight",
+        "performance_start_trace",
+        "performance_stop_trace",
+        "resize_page",
+        "select_page",
+        "take_screenshot",
+        "take_snapshot",
+        "upload_file",
+        "wait_for"
       ]
     }
   }

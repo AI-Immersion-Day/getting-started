@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "context7": {
+      "timeout": 60,
+      "type": "streamableHttp",
+      "url": "https://mcp.context7.com/mcp",
+      "disabled": true
+    },
+    "chrome-devtools": {
+      "disabled": true,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "fetch": {
+      "autoApprove": [],
+      "disabled": true,
+      "timeout": 60,
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ]
+    }
+  }
+}

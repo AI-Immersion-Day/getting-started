@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+        "DESCRIPTION": "This is an alternative to chrome devtools MCP - use one or the other"
+      }
+    },
+    "dev-tools": {
+      "type": "stdio",
+      "command": "go",
+      "args": [
+        "run",
+        "github.com/sammcj/mcp-devtools@HEAD"
+      ],
+      "env": {
+        "NOTE": "The below environment variables are completely optional, see https://github.com/sammcj/mcp-devtools for available tools and configuration options",
+        "DESCRIPTION": "This is Sams MCP-DevTools MCP server which is a swiss army knife of tools useful for coding agents. It will provide web search, web fetch, context7 documentation and other useful tools. If you use it you do not need those MCP servers as well. It's only requirement is that you have golang installed, if you don't you can download the pre-built binary from https://github.com/sammcj/mcp-devtools/releases.",
+        "ENABLE_ADDITIONAL_TOOLS": "security,sequential_thinking,shadcn"
+      }
+    }
+  }
+}

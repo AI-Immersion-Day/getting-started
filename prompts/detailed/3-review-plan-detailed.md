@@ -108,7 +108,7 @@ Work through this checklist systematically to ensure consistency:
 - [ ] Tasks are actionable and specific enough for an agent to execute
 - [ ] Tasks include acceptance criteria where appropriate
 - [ ] No task is overly large (>8 subtasks) or overly granular
-- [ ] Testing is integrated throughout, not just at the end (Unless the user has given a reason why a different approch is desired)
+- [ ] Testing is integrated throughout, not just at the end (Unless the user has given a reason why a different approach is desired)
 
 **Scope & Ambition:**
 - [ ] Plan focuses on a clear goal (not trying to solve everything)
